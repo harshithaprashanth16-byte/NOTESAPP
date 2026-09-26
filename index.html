@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACADNOTE — Personal Academic Workspace & Notes Hub</title>
+    <meta name="description" content="Personal student notes and academic resources, organized cleanly by subject." />
+    
+    <!-- Modern Technical & Academic Monospace Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              academic: {
+                green: "#00FF41",
+                mint: "#8AFF9B",
+                dark: "#000000",
+                card: "#08080c",
+                surface: "#0c0c12",
+                border: "#27272a",
+              },
+            },
+            fontFamily: {
+              sans: ["'Space Grotesk'", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+              mono: ["'JetBrains Mono'", "monospace"],
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="bg-[#000000] text-[#e5e7eb] antialiased min-h-screen selection:bg-[#00FF41] selection:text-[#000000] overflow-x-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

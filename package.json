@@ -1,0 +1,32 @@
+{
+  "name": "acadnote-app",
+  "version": "1.0.0",
+  "description": "Modern Student Notes & Academic Resources Web App inspired by ResourceX dark academic aesthetic",
+  "module": "server/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run server/index.ts",
+    "server": "bun run server/index.ts",
+    "dev": "vite",
+    "clean": "bun -e \"import { rmSync } from 'node:fs'; rmSync('dist', { recursive: true, force: true });\"",
+    "build": "bun run clean && vite build",
+    "test": "bun run test/e2e.test.ts",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.3"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.48.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwind-merge": "^3.7.0"
+  }
+}
